@@ -1,0 +1,74 @@
+[
+  {
+    "id": 8000,
+    "type": 1,
+    "name": "流血",
+    "describe": "拥有该BUFF的单位回合开始时减少10%的生命",
+    "bloodReturn": 0.0,
+    "UPATK": 0.0,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8001,
+    "type": 1,
+    "name": "缴械",
+    "describe": "拥有该BUFF的单位当前回合无法普通攻击",
+    "bloodReturn": 0.0,
+    "UPATK": 0.0,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8002,
+    "type": 1,
+    "name": "眩晕",
+    "describe": "拥有该BUFF的单位当前回合无法普通攻击，无法使用技能",
+    "bloodReturn": 0.0,
+    "UPATK": 0.0,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8003,
+    "type": 1,
+    "name": "沉默",
+    "describe": "拥有该BUFF的单位当前回合无法使用技能",
+    "bloodReturn": 0.0,
+    "UPATK": 0.0,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8004,
+    "type": 2,
+    "name": "回血",
+    "describe": "拥有该BUFF的单位回合开始时回复10%的生命",
+    "bloodReturn": 0.1,
+    "UPATK": 0.0,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8005,
+    "type": 2,
+    "name": "加攻",
+    "describe": "拥有该BUFF的单位回合当前回合攻击力提升10%",
+    "bloodReturn": 0.0,
+    "UPATK": 0.1,
+    "UPDEF": 0.0
+  },
+  {
+    "id": 8006,
+    "type": 2,
+    "name": "加防",
+    "describe": "拥有该BUFF的单位回合当前回合防御力提升10%",
+    "bloodReturn": 0.0,
+    "UPATK": 0.0,
+    "UPDEF": 0.1
+  },
+  {
+    "id": 8007,
+    "type": 2,
+    "name": "加攻2",
+    "describe": "拥有该BUFF的单位回合当前回合攻击力提升30%",
+    "bloodReturn": 0.0,
+    "UPATK": 0.3,
+    "UPDEF": 0.0
+  }
+]

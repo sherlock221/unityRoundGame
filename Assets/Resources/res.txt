@@ -1,0 +1,15 @@
+=
+Buff=Json
+Equipment=Json
+Goods=Json
+Monster=Json
+MonsterInfo=Json
+MonsterSkill=Json
+Skill=Json
+Task=Json
+CanvasMain=Main
+CanvasPlayerMenu=Main
+CanvasSetting=Main
+GoodsUI=Main
+PlayerUI=Main
+SkillUI=Main

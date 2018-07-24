@@ -1,0 +1,12 @@
+[
+  {
+    "id": 51001,
+    "name": "怪物1",
+    "monster1Id": 30101,
+    "monster2Id": 30102,
+    "monster3Id": 30103,
+    "monster4Id": 30104,
+    "monster5Id": 30105,
+    "monster6Id": 30106
+  }
+]
