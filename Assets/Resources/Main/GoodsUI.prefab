@@ -36,13 +36,49 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224475461661220970}
+  - component: {fileID: 114247173864321634}
+  - component: {fileID: 114472007487469980}
+  - component: {fileID: 114345547439266534}
   m_Layer: 0
   m_Name: GoodsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
+--- !u!114 &114247173864321634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907071691737652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114345547439266534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907071691737652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114472007487469980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907071691737652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114842152716587936
 MonoBehaviour:
   m_ObjectHideFlags: 1

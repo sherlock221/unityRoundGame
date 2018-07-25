@@ -13,12 +13,12 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
     /// </summary>
     private List<string> mFindNames = new List<string>() { "0", "1", "2"};
     
-	private List<Transform> mTableList = new List<Transform>(){null,null,null};
+    private List<PlayerUIBase> mTableList = new List<PlayerUIBase>(){null,null,null};
      
     /// <summary>
     /// 当前显示panel
     /// </summary>
-	private Transform mCurrent = null;
+    private PlayerUIBase mCurrent = null;
 
 
 	/// <summary>
@@ -59,12 +59,21 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
     /// 显示当前界面
     /// </summary>
     /// <param name="param">附加参数</param>
-	protected override void OnShow(object param) { }
+	protected override void OnShow(object param) { 
+        if (mCurrent)
+        {
+            mCurrent.OnShow();
+        }
+    }
 
     /// <summary>
     /// 隐藏当前界面
     /// </summary>
-	protected override void OnHide() { }
+	protected override void OnHide() {
+        if(mCurrent){
+            mCurrent.OnHide();
+        }
+    }
     /// <summary>
     /// 删除当前UI 
     /// </summary>
@@ -77,7 +86,7 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
 		if(mCurrent != mTableList[id] && flag){
 			mCurrent.gameObject.SetActive(false);
 			mCurrent = mTableList[id];
-			mCurrent.gameObject.SetActive(true);
+            RefreshUI();
 		}
     }
 
@@ -87,11 +96,15 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
 	{
 		GameObject obj = asset as GameObject;
 
+
+
 		int index = 0;
+        Type type = typeof(PlayerInfoCtrl);
 		switch (obj.name)
 		{
 			case  UIDef.PlayerUI :
 				index = 0;
+                type = typeof(PlayerInfoCtrl);
 				break;
 
 			case UIDef.SkillUI:
@@ -106,10 +119,14 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
 				break;
 		}
 
-		mTableList[index] = Instantiate(obj).transform;	
-		mTableList[index].SetParent(CacheTransform,false);
-		mTableList[index].gameObject.SetActive(false);
+   
 
+        GameObject instantObj = Instantiate(obj);
+        PlayerUIBase playerUIBase = instantObj.AddComponent(type) as PlayerUIBase; ;
+        mTableList[index] = playerUIBase;
+        instantObj.transform.SetParent(CacheTransform,false);
+        instantObj.SetActive(false);
+        playerUIBase.OnInit();
 
 		for (int i = 0; i < mTableList.Count; i++)
 		{
@@ -119,7 +136,7 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
 
 		if (!mCurrent){
 			mCurrent = mTableList[0];
-			mCurrent.gameObject.SetActive(true);
+            RefreshUI();			
 		}
 
 	}
@@ -130,8 +147,28 @@ public class PlayerMenuCtrl : BaseUI,IResLoadListener {
 	}
 
 
+    /// <summary>
+    /// 刷新界面
+    /// </summary>
+    private void RefreshUI() { 
+    
+        mCurrent.gameObject.SetActive(true);
+        mCurrent.OnShow();
+    }
+
+
 	private void OnBtnClose(BaseEventData e)
     {
 		UIMgr.Instance.HideUI(this.UIName);
+    }
+
+
+
+    public abstract  class PlayerUIBase : MonoBehaviour {
+        
+        public abstract void OnInit();
+        public abstract void OnShow();
+        public abstract void OnDestory();
+        public abstract void OnHide();
     }
 }

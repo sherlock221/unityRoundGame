@@ -19,13 +19,16 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224748822840030142}
+  - component: {fileID: 114751259124400094}
+  - component: {fileID: 114664627937726042}
+  - component: {fileID: 114491761016084276}
   m_Layer: 0
   m_Name: SkillUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1585351586066002
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +46,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114491761016084276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088414293242988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114614666777217438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,6 +84,28 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114664627937726042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088414293242988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114751259124400094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088414293242988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222091940441376620
 CanvasRenderer:
   m_ObjectHideFlags: 1

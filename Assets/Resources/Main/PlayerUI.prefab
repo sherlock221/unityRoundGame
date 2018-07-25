@@ -123,6 +123,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224643742588493998}
+  - component: {fileID: 114749776747366420}
+  - component: {fileID: 114068525084726518}
+  - component: {fileID: 114606107822442190}
   m_Layer: 0
   m_Name: PlayerUI
   m_TagString: Untagged
@@ -373,6 +376,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u817F\u90E8"
+--- !u!114 &114068525084726518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297998793343630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114088267968585852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -761,7 +775,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lv.100
+  m_Text: Lv.1
 --- !u!114 &114518000740676306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -931,6 +945,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114606107822442190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297998793343630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114634655009651070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1004,7 +1029,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u653B\u51FB : 999"
+  m_Text: "\u653B\u51FB : 6"
 --- !u!114 &114692756797961690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1046,6 +1071,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114749776747366420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297998793343630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72c0c25a60154f84b1c1cc71e4f2b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114793156149452334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1092,7 +1128,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9632\u5FA1 : 999"
+  m_Text: "\u9B54\u6CD5 : 30"
 --- !u!114 &114877868046469384
 MonoBehaviour:
   m_ObjectHideFlags: 1
